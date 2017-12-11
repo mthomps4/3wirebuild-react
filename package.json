@@ -4,11 +4,21 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-strap": "0.0.1"
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-strap": "0.0.1",
+    "reactstrap": "^5.0.0-alpha.4"
   },
   "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
     "react-scripts": "1.0.13"
   },
   "scripts": {
