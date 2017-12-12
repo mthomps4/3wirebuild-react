@@ -8,6 +8,7 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
+import Progress from 'reactstrap/lib/Progress';
 
 export default class NavigationBar extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ export default class NavigationBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar style={{ 'background-color': '#0A5' }} dark expand="md">
+                <Navbar color="dark" dark expand="md">
                     <NavbarBrand href="/">3Wirebuild</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
@@ -46,6 +47,12 @@ export default class NavigationBar extends React.Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
+                <Progress
+                    animated
+                    color="info"
+                    value="100"
+                    style={{ height: '5px' }}
+                />
             </div>
         );
     }

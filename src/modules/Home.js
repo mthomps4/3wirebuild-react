@@ -8,28 +8,30 @@ import Progress from 'reactstrap/lib/Progress';
 const Home = () => {
     return (
         <div>
-            <div className="mainJumbo mb-0" fluid>
-                <div className="d-flex justify-content-center align-">
-                    <Badge
-                        color="dark"
-                        pill
-                        style={{ 'background-color': '#005' }}
-                    >
-                        <div className="p-3 pr-5 pl-5 mr-5 ml-5">
+            <div className="mainJumbo mb-0" fluid />
+            <Progress
+                animated
+                color="info"
+                value="100"
+                style={{ height: '8px' }}
+            />
+            <a href="/">
+                <div className="d-flex justify-content-center">
+                    <Badge className="logo-badge-div" color="dark" pill>
+                        <div className="p-3">
                             <div className="d-flex justify-content-center align-items-center">
                                 <h1 className="display-3 warp3">3</h1>
-                                <h1 className="display-4">WireBuild</h1>
+                                <h1 className="title">WireBuild</h1>
                             </div>
                             <div className="d-flex row justify-content-center subtitle">
-                                <p className="pt-2 subtitle">
+                                <p className="pt-2">
                                     Designer &bull; Developer &bull; Builder
                                 </p>
                             </div>
                         </div>
                     </Badge>
                 </div>
-            </div>
-            <Progress animated color="info" value="100" />
+            </a>
         </div>
     );
 };
