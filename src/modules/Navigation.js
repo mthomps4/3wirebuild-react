@@ -26,8 +26,8 @@ export default class NavigationBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="dark" dark expand="md">
-                    <NavbarBrand href="/">3WireBuild</NavbarBrand>
+                <Navbar style={{ 'background-color': '#0A5' }} dark expand="md">
+                    <NavbarBrand href="/">3Wirebuild</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>

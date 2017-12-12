@@ -30,3 +30,24 @@
 .copydate {
   color: #999 !important;
 }
+
+.mainJumbo {
+  background-image: url('../src/images/codecode.jpg'),
+    url('../src/images/curls.jpg');
+  background-size: 51%;
+  background-repeat: no-repeat;
+  background-position: 0, 100%;
+  height: 30vh;
+}
+
+.warp3 {
+  transform: rotateZ(15deg);
+  -webkit-transform: rotateZ(15deg);
+  -moz-transform: rotateZ(15deg);
+}
+
+.subtitle {
+  margin-top: -0.8em !important;
+  font-weight: 500;
+  font-size: 1.15em;
+}
