@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import NavigationBar from './modules/Navigation';
 import Footer from './modules/Footer';
-import Home from './modules/Home';
-import DeveloperPage from './modules/DeveloperPage';
-import CraftsmanPage from './modules/CraftsmanPage';
-import Blog from './modules/Blog';
-import Resources from './modules/Resources';
-import NotFound from './modules/NotFound';
+import Home from './modules/pages/Home';
+import DeveloperPage from './modules/pages/DeveloperPage';
+import CraftsmanPage from './modules/pages/CraftsmanPage';
+import Blog from './modules/pages/Blog';
+import Resources from './modules/pages/Resources';
+import NotFound from './modules/pages/NotFound';
 
 class App extends Component {
     render() {

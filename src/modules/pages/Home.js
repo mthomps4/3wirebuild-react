@@ -1,7 +1,7 @@
 import React from 'react';
 import Badge from 'reactstrap/lib/Badge';
 import Progress from 'reactstrap/lib/Progress';
-import { Logos } from './Animated';
+import { Photos } from '../Animated';
 
 const Home = () => {
     return (
@@ -29,7 +29,7 @@ const Home = () => {
                 <div className="main-container-flex">
                     <div>
                         <h1>About The Person</h1>
-                        <Logos />
+                        <Photos />
                         <p className="aboutText">
                             To describe myself in one word, I am a{' '}
                             <b>builder</b>.

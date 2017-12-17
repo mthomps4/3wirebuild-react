@@ -17,7 +17,7 @@ const Square = () => {
     );
 };
 
-export const Logos = () => {
+export const Photos = () => {
     return (
         <div className="gridContainer">
             <div className="gridAnimation" />
