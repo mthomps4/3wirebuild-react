@@ -38,7 +38,14 @@ export default class NavigationBar extends React.Component {
                                 <NavLink href="/about">About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/contact">Contact</NavLink>
+                                <NavLink href="/thedeveloper">
+                                    the Developer
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/thecraftsman">
+                                    the Craftsman
+                                </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/blog">Blog</NavLink>
@@ -49,12 +56,7 @@ export default class NavigationBar extends React.Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
-                <Progress
-                    animated
-                    color="info"
-                    value="100"
-                    style={{ height: '5px' }}
-                />
+                <Progress color="info" value="100" style={{ height: '5px' }} />
             </div>
         );
     }

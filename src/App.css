@@ -6,7 +6,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .mainJumbo {
-  background-image: url('../src/images/curls.jpg');
+  background-image: url('../src/images/overlay.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 25vh;
@@ -48,96 +48,83 @@ font-family: 'Roboto', sans-serif; */
 
 .main-container {
   margin-bottom: 10em;
+  margin-top: 1.5em;
 }
 
-.screen {
-  width: 100px;
-  height: 100px;
-  background: black;
-  position: relative;
+.main-container-flex h1 {
+  font-size: 2em;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
 }
 
-.animated1 {
-  -webkit-animation: Axis1 2.5s infinite;
-  animation: Axis1 2.5s infinite;
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background-color: #a0f;
-  position: absolute;
-  top: -5px;
-  left: 45px;
+.aboutText {
+  margin-top: 1em;
+  color: black;
+  opacity: 0.6;
 }
 
-.animated2 {
-  -webkit-animation: Axis2 2.5s infinite;
-  animation: Axis2 2.5s infinite;
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background-color: #0ff;
-  position: absolute;
-}
-.animated3 {
-  -webkit-animation: Axis3 2.5s infinite;
-  animation: Axis3 2.5s infinite;
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background-color: #f0f;
-  position: absolute;
-  top: -5px;
-  left: -5px;
+.gridContainer {
+  width: 150px;
+  height: 150px;
+  background: white;
+  margin-left: 1em;
+  margin-top: 0.5em;
+  border-radius: 150px;
+  border: solid 4px #333;
+  overflow: hidden;
+  float: right;
 }
 
-@keyframes Axis1 {
+.gridAnimation {
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: grayscale(100%);
+  -webkit-animation: photos 15s infinite linear;
+  -o-animation: photos 15s infinite linear;
+  -moz-animation: photos 15s infinite linear;
+  animation: photos 15s infinite linear;
+  -webkit-animation-timing-function: steps(1, end);
+  -o-animation-timing-function: steps(1, end);
+  -moz-animation-timing-function: steps(1, end);
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes photos {
+  0%,
+  100% {
+    background-image: url('./images/me/us.JPG');
+  }
+  33% {
+    background-image: url('./images/me/me.JPG');
+  }
+  67% {
+    background-image: url('./images/me/Pro.jpg');
+  }
+}
+
+@keyframes sketch {
   0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+    background-image: url('./images/sketches/empty20grid.png');
+  }
+  17% {
+    background-image: url('./images/sketches/designgrid2.png');
+  }
+  33% {
+    background-image: url('./images/sketches/empty20grid.png');
   }
   50% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    background-image: url('./images/sketches/devgrid.png');
+  }
+  67% {
+    background-image: url('./images/sketches/empty20grid.png');
+  }
+  84% {
+    background-image: url('./images/sketches/shop.png');
   }
   100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-
-@keyframes Axis2 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(100px, 100px, 100px);
-    transform: translate3d(100px, 100px, 100px);
-    width: 40px;
-    height: 40px;
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes Axis3 {
-  0% {
-    -webkit-transform: translateX(0px) translateY(100px);
-    transform: translateX(0px) translateY(100px);
-  }
-  50% {
-    -webkit-transform: translateX(100px) translateY(0px);
-    transform: translateX(100px) translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateX(0px) translateY(100px);
-    transform: translateX(0px) translateY(100px);
+    background-image: url('./images/sketches/empty20grid.png');
   }
 }

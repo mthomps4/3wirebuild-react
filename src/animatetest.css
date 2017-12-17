@@ -1,0 +1,168 @@
+.screen {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background: black;
+  position: relative;
+}
+
+.ball1 {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #00d9ff;
+  position: absolute;
+  top: 45px;
+}
+
+.animateball1 {
+  -webkit-animation: Axis1 5s infinite linear;
+  animation: Axis1 5s infinite linear;
+}
+.animateball1-2 {
+  -webkit-animation: Axis1 5s infinite linear;
+  animation: Axis1 5s infinite linear;
+  animation-delay: 0.8s;
+}
+.animateball1-3 {
+  -webkit-animation: Axis1 5s infinite linear;
+  animation: Axis1 5s infinite linear;
+  animation-delay: 1.6s;
+}
+
+.ball2 {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #0ff;
+  position: absolute;
+}
+
+.animateBall2 {
+  -webkit-animation: Axis2 5s infinite linear;
+  animation: Axis2 5s infinite linear;
+}
+.animateBall2-2 {
+  -webkit-animation: Axis2 5s infinite linear;
+  animation: Axis2 5s infinite linear;
+  animation-delay: 0.8s;
+}
+.animateBall2-3 {
+  -webkit-animation: Axis2 5s infinite linear;
+  animation: Axis2 5s infinite linear;
+  animation-delay: 1.6s;
+}
+
+.ball3 {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #f0f;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.animateBall3 {
+  -webkit-animation: Axis3 5s infinite linear;
+  animation: Axis3 5s infinite linear;
+}
+.animateBall3-2 {
+  -webkit-animation: Axis3 5s infinite linear;
+  animation: Axis3 5s infinite linear;
+  animation-delay: 0.8s;
+}
+.animateBall3-3 {
+  -webkit-animation: Axis3 5s infinite linear;
+  animation: Axis3 5s infinite linear;
+  animation-delay: 1.6s;
+}
+
+@keyframes Axis1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 0px, 0);
+    transform: translate3d(50px, 00px, 0);
+    width: 3px;
+    height: 3px;
+  }
+  50% {
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+    width: 10px;
+    height: 10px;
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 0px);
+    transform: translate3d(50px, 0px, 0);
+    width: 25px;
+    height: 25px;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+@keyframes Axis2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(60px, 50px);
+    transform: translate3d(60px, 50px);
+    width: 30px;
+    height: 30px;
+  }
+  50% {
+    -webkit-transform: translate3d(100px, 100px, 100px);
+    transform: translate3d(100px, 100px, 100px);
+    width: 20px;
+    height: 20px;
+  }
+  75% {
+    -webkit-transform: translate3d(40px, 50px);
+    transform: translate3d(40px, 50px);
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Axis3 {
+  0% {
+    -webkit-transform: translateX(0px) translateY(100px);
+    transform: translateX(0px) translateY(100px);
+  }
+  25% {
+    -webkit-transform: translateX(50px) translateY(50px);
+    transform: translateX(50px) translateY(50px);
+    width: 5px;
+    height: 5px;
+  }
+  50% {
+    -webkit-transform: translateX(100px) translateY(0px);
+    transform: translateX(100px) translateY(0px);
+  }
+  75% {
+    -webkit-transform: translateX(50px) translateY(50px);
+    transform: translateX(50px) translateY(50px);
+    width: 30px;
+    height: 30px;
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateY(100px);
+    transform: translateX(0px) translateY(100px);
+  }
+}

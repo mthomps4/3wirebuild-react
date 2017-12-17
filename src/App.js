@@ -4,8 +4,8 @@ import './App.css';
 import NavigationBar from './modules/Navigation';
 import Footer from './modules/Footer';
 import Home from './modules/Home';
-import About from './modules/About';
-import Contact from './modules/Contact';
+import DeveloperPage from './modules/DeveloperPage';
+import CraftsmanPage from './modules/CraftsmanPage';
 import Blog from './modules/Blog';
 import Resources from './modules/Resources';
 import NotFound from './modules/NotFound';
@@ -18,8 +18,9 @@ class App extends Component {
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route path="/about" component={About} />
-                        <Route path="/contact" component={Contact} />
+                        <Route path="/about" component={Home} />
+                        <Route path="/thedeveloper" component={DeveloperPage} />
+                        <Route path="/thecraftsman" component={CraftsmanPage} />
                         <Route path="/blog" component={Blog} />
                         <Route path="/resources" component={Resources} />
                         <Route path="*" component={NotFound} />
